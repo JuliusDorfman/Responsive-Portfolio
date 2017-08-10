@@ -14,6 +14,7 @@ body {
 
 
 
+
 /* general */
 
 .container {
@@ -53,6 +54,7 @@ h2,
 h3 {
     font-size: 22px;
 }
+
 
 
 
@@ -108,6 +110,7 @@ nav a:first-child {
 
 
 
+
 /* footer */
 
 footer {
@@ -120,6 +123,8 @@ footer {
     background: #666;
     border-top: 8px solid #4aaaa5;
 }
+
+
 
 
 
@@ -161,8 +166,6 @@ h3,
 
 
 
-
-
 /* main */
 
 #main-container {
@@ -178,7 +181,6 @@ h3,
     background: #fff;
     border: 1px solid #ddd;
 }
-
 
 
 
@@ -289,11 +291,11 @@ input[type=submit] {
 
 @media screen and (max-width: 768px) {
     #index .main-section {
-        min-width: 768px;
+        max-width: 768px;
         float: none;
     }
     #index .sidebar {
-        min-width: 768px;
+        max-width: 768px;
         float: none;
     }
 }
@@ -345,6 +347,8 @@ input[type=submit] {
         margin-right: auto;
     }
 }
+
+
 
 
 
@@ -409,19 +413,128 @@ input[type=submit] {
 
 @media screen and (max-width: 640px) {
     #contact nav {
-        float: left;
+        width: 100%;
         margin: 0 auto;
     }
     #contact #logo {
-        float: left;
+        display: block;
+        width: 100%;
         margin: 0 auto;
     }
     #contact #masthead {
         text-align: center;
     }
+
+    #contact nav a {
+        padding: 0px 2em;
+    }
 }
 
-#contact nav a {
-    margin: 0px 1em;
-    padding-left: 2em;
+
+
+
+/*PORTFOLIO.HTML*/
+
+@media screen and (max-width: 980px) {
+    #portfolio .main-section {
+        max-width: 380px;
+        margin-left: 1.5em;
+    }
+
+    #portfolio #main-container {
+        max-width: 980px;
+    }
+
+    #portfolio .work,
+    h1 {
+        display: block;
+        margin: 1.5em auto;
+        float: none;
+        max-width: 380px;
+    }
+
+    #portfolio h1 {
+        padding-left: .75em;
+    }
+
+    #portfolio .sidebar {
+        float: left;
+        margin-left: 1.5em;
+    }
+
+    #portfolio #logo {
+        margin-left: 1em
+    }
+    #portfolio nav {
+        float: left;
+        margin-left: 8em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #portfolio .main-section {
+        max-width: 768px;
+        float: left;
+        margin: 0 auto;
+    }
+
+    #portfolio .main-section #main-container {
+        max-width: 768px;
+    }
+
+    #portfolio .main-section h1 {
+        /*margin:0px;*/
+        max-width: 750px;
+        margin: 0px auto;
+    }
+
+    #portfolio .sidebar {
+        float: left;
+        max-width: 768px;
+        margin: 3em auto 1em auto;
+    }
+
+    #portfolio .work {
+        width: 100%;
+        float: left;
+    }
+
+    #portfolio .main-section .work {
+        float: left;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    #portfolio #main-container {
+        max-width: 520px;
+    }
+
+    #portfolio .main-section h1 {
+        max-width: 520px;
+        margin: 15px;
+    }
+
+    #portfolio .main-section {
+        margin: 0px auto;
+        max-width: 520px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    #portfolio #logo {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    #portfolio nav {
+        margin: 0px auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    #portfolio .work {
+      text-align: center;
+    }
 }
